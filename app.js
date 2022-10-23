@@ -13,8 +13,8 @@ var express               = require("express"),
     User                  = require("./models/user"),
     seedDB                = require("./seeds");
 
-var compression = require("compression");
-var helmet = require("helmet");
+var compression = require("compression"),
+    helmet = require("helmet");
 app.use(compression());    
 app.use(helmet());
 
